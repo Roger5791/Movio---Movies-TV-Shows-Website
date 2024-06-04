@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Movio" />
+
+    <meta name="description" content="Movio is a Movie App made by Saurav Antony"/>
+
+    <link rel="shortcut icon" href="/favicon.svg" type="image/svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    
+
+    <link rel="stylesheet" href="Assets/CSS/style.css" />
+
+    <script src="Assets/JS/global.js" defer></script>
+    <script src="Assets/JS/tv-detail.js" type="module"></script>
+  </head>
+  <body>
+    <!--==============Header===========-->
+    <header class="header">
+      <a href="index.html" class="logo">
+        <img
+          src="Assets/Images/logo.png"
+          alt="Movio Home"
+          width="140"
+          height="32"
+        />
+      </a>
+
+      <div class="nav-links">
+        <ul>
+          <li><a href="index.html">Movies</a></li>
+          <li class="active-page"><a href="tv.html">TV Shows</a></li>
+         
+          
+        </ul>
+      </div>
+
+      <div class="search-box" search-box>
+        <div class="search-wrapper" search-wrapper>
+          <input
+            type="text"
+            name="search"
+            aria-label="search movies"
+            placeholder="Search any TV Show..."
+            class="search-field"
+            autocomplete="off"
+            search-field
+          />
+          <img
+            src="Assets/Images/search.png"
+            alt="search"
+            class="leading-icon"
+            width="24"
+            height="24"
+          />
+        </div>
+
+        <button class="search-btn" search-toggler menu-close>
+          <img
+            src="./assets//images/close.png"
+            width="24"
+            height="24"
+            alt="open search box"
+          />
+        </button>
+      </div>
+
+      <button class="search-btn" search-toggler menu-close>
+        <img
+          src="Assets/Images/search.png"
+          width="24"
+          height="24"
+          alt="open search box"
+        />
+      </button>
+
+      <button class="menu-btn" menu-btn menu-toggler>
+        <img
+          src="Assets/Images/menu.png"
+          alt="open menu"
+          class="menu"
+          width="24"
+          height="24"
+        />
+        <img
+          src="Assets/Images/menu-close.png"
+          alt="close menu"
+          class="close"
+          width="24"
+          height="24"
+        />
+      </button>
+    </header>
+    <main>
+      <!--============Sidebar=============-->
+      <nav class="sidebar" sidebar></nav>
+      <div class="overlay" overlay menu-toggler></div>
+
+      <article class="container" page-content>
+        
+        <div  page-content2></div>
+        <div  page-content3></div>
+      </article>
+    </main>
+    
+ 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  </body>
+</html>
